@@ -1,0 +1,105 @@
+@require fonts
+
+small = 20px
+medium = 24px
+large = 34px
+
+margin-medium = 32px
+
+body
+  font-family NHaasGrotesk, sans-serif
+  -webkit-font-smoothing antialiased
+  font-size large
+  font-weight bold
+
+*
+  box-sizing border-box
+
+.header
+  height 100px
+  background white
+  vertical-align middle
+
+.menu
+  height 21px
+  margin 0 28px
+  position relative
+  top 2px
+
+.logo
+  height margin-medium
+  position relative
+  top -2px
+
+.menu, .logo, .label, .skip
+  display inline-block
+  vertical-align middle
+
+.label
+  font-size medium
+  margin-left margin-medium - 8px
+  position relative
+  top 5px
+
+.left-header
+  display inline-block
+  vertical-align middle
+  height 22px
+  margin 39px 0px
+
+.left-header-inner
+  position relative
+  top -11px
+
+.skip
+  position absolute
+  right 32px
+  top 40px
+  font-size small
+
+.arrow
+  height small
+  margin-left 10px
+  position relative
+  top 3px
+
+.content
+  height calc(100vh \- 100px)
+
+.left, .right
+  width 50%
+  height 100%
+  display inline-block
+  vertical-align top
+  position relative
+  overflow hidden
+  video
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+
+.left
+  background #010150
+  video
+    opacity 0.7
+
+.small
+  opacity 0.75
+  font-size medium
+  margin-bottom 15px
+  color white
+  display block
+
+.copy
+  color white
+  display inline-block
+  vertical-align middle
+  line-height 36px
+  position absolute
+  top 50%
+  left 0
+  width 100%
+  transform translateY(-50%)
+  padding 0 80px
+  height 240px

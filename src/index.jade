@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    style
+      include ../node_modules/reset-css/reset.css
+    style
+      include:stylus style.styl
+  body
+    header.header
+      .left-header
+        .left-header-inner
+          img.menu( src='imgs/menu.svg' )
+          img.logo( src='imgs/logo.svg' )
+          .label 2016 Annual Report
+      .skip Skip to Chairman&rsquo;s letter
+        img.arrow( src='imgs/arrow.svg' )
+    .content
+      .left
+        video( autoplay )
+          source( src='video/left.mp4' type='video/mp4' loop )
+        p.copy
+          small.small Better matters
+          | In this new ecosystem of ever-evolving needs for complex machine-to-machine and IoT solutions, we are moving quickly to stay ahead of increasing demands.
+      .right
+        video( autoplay )
+          source( src='video/right.mp4' type='video/mp4' loop )
+        p.copy
+          small.small &nbsp;
+          | Our mission is to make the world a better place—for us, and for future generations.
