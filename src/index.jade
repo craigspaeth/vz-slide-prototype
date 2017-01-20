@@ -17,14 +17,16 @@ html(lang="en")
         img.arrow( src='imgs/arrow.svg' )
     .content
       .left
-        video( autoplay )
-          source( src='video/left.mp4' type='video/mp4' loop )
+        video( autoplay loop )
+          source( src='video/left.mp4' type='video/mp4' )
         p.copy
           small.small Better matters
           | In this new ecosystem of ever-evolving needs for complex machine-to-machine and IoT solutions, we are moving quickly to stay ahead of increasing demands.
       .right
-        video( autoplay )
-          source( src='video/right.mp4' type='video/mp4' loop )
+        video( autoplay loop )
+          source( src='video/right.mp4' type='video/mp4' )
         p.copy
           small.small &nbsp;
           | Our mission is to make the world a better place—for us, and for future generations.
+      .dots
+        img( src='imgs/nav.svg' )
